@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academix - Home</title>
+  <link rel="stylesheet" href="../src/styles/global.css">
+  <link rel="stylesheet" href="../src/styles/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!--Loading animation -->
+  <div class="loader">
+    <div class="dot-wave">
+      <div class="dot-wave__dot"></div>
+      <div class="dot-wave__dot"></div>
+      <div class="dot-wave__dot"></div>
+      <div class="dot-wave__dot"></div>
+    </div>
+    <p>Academix......</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="StudyHub Logo">
+        Academix
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="resources.html">Resources</a>
+        <a href="upload.html">Upload</a>
+        <a href="premium.html">Premium</a>
+        
+        <!-- Login/Signup links (shown when logged out) -->
+        <a href="login.html" class="login-link">Login</a>
+        <a href="signup.html" class="signup-link">Signup</a>
+        
+        <!-- Account dropdown (shown when logged in) -->
+        <div class="account-dropdown logged-out">
+          <button class="account-btn">
+            <img src="default-profile.jpg" alt="Profile" id="profile-pic">
+            <span id="username-display">Account</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="account-info">
+              <h4 id="dropdown-username">User Name</h4>
+              <p id="dropdown-email">user@example.com</p>
+            </div>
+            <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+            <a href="my-resources.html"><i class="fas fa-book"></i> My Resources</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            <div class="divider"></div>
+            <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Academix</h1>
+      <p>Your one-stop destination for study resources.</p>
+      <a href="categories.html" class="animated-btn">Explore Resources</a>
+    </div>
+  </section>
+
+  <!-- Featured Resources Section -->
+  <section class="featured-resources">
+    <div class="container">
+      <h2>Featured Resources</h2>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <img src="notes.png" alt="Notes Icon">
+          <h3>Handwritten Notes</h3>
+          <p>High-quality notes for various subjects.</p>
+          <a href="resources.html?category=notes" class="btn">View Notes</a>
+        </div>
+        <div class="resource-card">
+          <img src="pptx.png" alt="PPT Icon">
+          <h3>Presentations</h3>
+          <p>Download well-structured PPTs.</p>
+          <a href="resources.html?category=ppt" class="btn">View PPTs</a>
+        </div>
+        <div class="resource-card">
+          <img src="paper.png" alt="Question Paper Icon">
+          <h3>Question Papers</h3>
+          <p>Access previous year question papers.</p>
+          <a href="resources.html?category=question-papers" class="btn">View Papers</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Modern Testimonials Section -->
+<section class="testimonials">
+  <div class="container">
+    <h2>What Our Users Say</h2>
+    <p class="subtitle">Trusted by thousands of students across India</p>
+    <div class="testimonial-slider">
+      <div class="testimonial-card">
+        <div class="user-info">
+          <img src="profile.jpg" alt="Ananya Sharma">
+          <div>
+            <h4>Snehasree parida</h4>
+            <p>BBA LLb Student</p>
+          </div>
+        </div>
+        <p>"Academix made my exam prep seamless! The handwritten notes were a game changer!"</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="user-info">
+          <img src="profile.jpg" alt="Rahul Verma">
+          <div>
+            <h4>Aman kumar Gouda</h4>
+            <p>Btech CSE Student</p>
+          </div>
+        </div>
+        <p>"The previous year papers helped me a lot. A must-have platform for students!"</p>
+      </div>
+      <div class="testimonial-card">
+        <div class="user-info">
+          <img src="profile.jpg" alt="Neha Iyer">
+          <div>
+            <h4>Payal Nanda</h4>
+            <p>AR VR specialized</p>
+          </div>
+        </div>
+        <p>"I found the best study materials here. The PPTs and journals were very useful!"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta">
+  <div class="container">
+      <h2>Unlock Your Potential with Academix Premium!</h2>
+      <p>Dive into a world of enhanced learning with exclusive content and expert guidance.</p>
+      <a href="premium.html" class="animated-btn cta-btn">Explore Premium Features</a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Academix. All rights reserved.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="resources.html">Resources</a>
+      <a href="upload.html">Upload</a>
+      <a href="premium.html">Premium</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+  <!-- JavaScript for Loading Animation -->
+  <script>
+    // Simulate a session-based loading animation
+    const loader = document.getElementById('loader');
+
+    // Hide loader after 3 seconds (simulate session-based loading)
+    setTimeout(() => {
+      loader.style.display = 'none';
+    }, 3000);
+  </script>
+
+  <script src="../src/scripts/home.js"></script>
+  <script src="../src/scripts/account.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Academix</title>
+  <link rel="stylesheet" href="../src/styles/global.css">
+  <link rel="stylesheet" href="../src/styles/contact.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logo.png" alt="StudyHub Logo">
+        Academix
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="resources.html">Resources</a>
+        <a href="upload.html">Upload</a>
+        <a href="premium.html">Premium</a>
+        
+        <!-- Login/Signup links (shown when logged out) -->
+        <a href="login.html" class="login-link">Login</a>
+        <a href="signup.html" class="signup-link">Signup</a>
+        
+        <!-- Account dropdown (shown when logged in) -->
+        <div class="account-dropdown logged-out">
+          <button class="account-btn">
+            <img src="default-profile.jpg" alt="Profile" id="profile-pic">
+            <span id="username-display">Account</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <div class="account-info">
+              <h4 id="dropdown-username">User Name</h4>
+              <p id="dropdown-email">user@example.com</p>
+            </div>
+            <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+            <a href="my-resources.html"><i class="fas fa-book"></i> My Resources</a>
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            <div class="divider"></div>
+            <a href="#" id="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>
+        Have questions, feedback, or need support? We're here to help! Fill out the form below, and our team will reach out to you soon.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p><i class="fas fa-envelope"></i> Email: support@Academix.com</p>
+          <p><i class="fas fa-phone"></i> Phone: +91 7008028134</p>
+          <p><i class="fas fa-map-marker-alt"></i> Address: Near BMC office, Kalpana square, Bhubaneswar, 751014</p>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Academix. All rights reserved.</p>
+      <nav>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Loading Animation -->
+  <div class="loader" id="loader"></div>
+
+  <!-- Hide Loader When Page is Loaded -->
+  <script>
+    window.addEventListener('load', function () {
+      const loader = document.getElementById('loader');
+      loader.style.opacity = '0';
+      setTimeout(() => loader.style.display = 'none', 500);
+    });
+  </script>
+
+  <!-- Contact Form Submission Script -->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Get form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      // Simulate form submission (replace with actual backend integration)
+      console.log('Form submitted:', { name, email, subject, message });
+      alert('Thank you for contacting us! We will get back to you soon.');
+
+      // Clear the form
+      document.getElementById('contact-form').reset();
+    });
+  </script>
+  <script src="../src/scripts/account.js"></script>
+</body>
+</html>
